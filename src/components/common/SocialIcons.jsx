@@ -50,7 +50,7 @@ export default function SocialIcons() {
   ];
 
   return (
-    <div className="flex items-center gap-4 mt-[-12px]">
+    <div className="flex items-center gap-2 xl:gap-4 mt-[-12px]">
       {socialLinks.map((social) => (
         <motion.a
           key={social.name}

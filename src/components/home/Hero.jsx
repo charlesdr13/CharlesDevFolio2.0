@@ -50,36 +50,38 @@ export default function Hero() {
   );
 
   return (
-    <div ref={containerRef} className="min-h-screen flex relative overflow-visible">
-      <div className="mx-5 mt-5 px-6 md:px-12 lg:px-0">
+    <div ref={containerRef} className="min-h-screen flex relative overflow-hidden">
+      <div className="mx-5 xl:mx-5 mt-5 xl:mt-5 sm:px-0 xl:px-0">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-left flex flex-col w-full gap-4"
+          className="text-left flex flex-col w-full gap-0 xl:gap-4"
         >
           {/* Header Section */}
-          <div className="flex flex-row justify-between items-start w-full overflow-visible">
-            <div className="flex flex-row gap-50">
-              <h1 className="text-md md:text-lg leading-none font-open-sauce font-bold mb-4 text-red-500">
+          <div className="flex flex-col xl:flex-row justify-between items-start w-full overflow-visible">
+            <div className="flex xl:flex-row xl:gap-50">
+              <h1 className="text-lg leading-none font-open-sauce font-bold mb-4 text-red-500">
                 CHARLES <br /> <span className="text-[#6B6B6B]">DEL ROSARIO</span>
               </h1>
-              <h2 className="text-md md:text-lg font-open-sauce font-bold leading-none text-[#6B6B6B]">
+              <h2 className="text-lg absolute right-5 xl:right-0 xl:relative font-open-sauce font-bold leading-none text-[#6B6B6B]">
                 DEVELOPER <br /> FOLIO <span className="text-red-500">2025</span>
               </h2>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 mt-5 xl:mt-0">
               <SocialIcons />
+              <div className="absolute right-0 xl:relative">
               <ContactButton />
+              </div>
             </div>
           </div>
 
           {/* Scrolling Text Section */}
           <div className="mt-0 relative w-screen -ml-[2rem] overflow-visible pointer-events-none">
-            <div className="flex items-center justify-center gap-4 text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible lg:-mt-20">
+            <div className="flex items-center justify-center gap-4 text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
               <motion.span 
                 initial={{ x: "0%" }}
-                className="lg:-ml-0 relative pointer-events-none" 
+                className="xl:-ml-0 relative pointer-events-none" 
                 style={{ x: frontX }}
               >
                 <span className="hover-highlight">F</span>
@@ -89,7 +91,7 @@ export default function Hero() {
               </motion.span>
               <motion.div 
                 initial={{ width: "15rem" }}
-                className="h-[30px] bg-[#6B6B6B] overflow-visible absolute lg:-ml-20 pointer-events-none"
+                className="h-[30px] bg-[#6B6B6B] overflow-visible absolute xl:-ml-20 pointer-events-none"
                 style={{ 
                   width: dashWidth,
                   left: '50%',
@@ -98,7 +100,7 @@ export default function Hero() {
               />
               <motion.span 
                 initial={{ x: "0%" }}
-                className="lg:ml-70 relative pointer-events-none" 
+                className="xl:ml-70 relative pointer-events-none" 
                 style={{ x: endX }}
               >
                 <span className="hover-highlight">S</span>
@@ -108,8 +110,8 @@ export default function Hero() {
                 <span className="hover-highlight">K</span>
               </motion.span>
             </div>
-            <div className="flex lg:flex-row align-text-top items-start pointer-events-auto w-full">
-              <h2 className="text-[320px] font-bold text-[#6B6B6B] font-bebas-neue mt-4 ml-[2rem] lg:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
+            <div className="flex xl:flex-row align-text-top items-start pointer-events-auto w-full">
+              <h2 className="text-[320px] font-bold text-[#6B6B6B] font-bebas-neue mt-4 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
                 <span className="hover-highlight">D</span>
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">V</span>
