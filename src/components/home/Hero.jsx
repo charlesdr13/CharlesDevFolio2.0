@@ -35,18 +35,18 @@ export default function Hero() {
 
   // Use smoothProgress instead of scrollYProgress
   const frontX = useTransform(smoothProgress, 
-    [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1], 
-    ['0%', '-2.5%', '-5%', '-7.5%', '-10%', '-12.5%', '-15%', '-17.5%', '-20%', '-22.5%', '-25%', '-27.5%', '-30%', '-32.5%', '-35%', '-37.5%', '-40%', '-42.5%', '-45%', '-47.5%', '-50%']
+    [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1],     ['0%', '-10%', '-18%', '-25%', '-30%', '-34%', '-37%', '-40%', '-42%', '-44%', '-45.5%', '-46.5%', '-47.5%', '-48.2%', '-48.8%', '-49.2%', '-49.5%', '-49.7%', '-49.8%', '-49.9%', '-50%']
+
   );
   
   const endX = useTransform(smoothProgress, 
     [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1], 
-    ['0%', '2%', '4%', '6%', '8%', '10%', '12%', '14%', '16%', '18%', '20%', '22%', '24%', '26%', '28%', '30%', '32%', '34%', '36%', '38%', '40%']
+    ['0%', '8%', '15%', '21%', '26%', '30%', '33%', '35%', '36.5%', '37.5%', '38.2%', '38.7%', '39%', '39.2%', '39.4%', '39.6%', '39.7%', '39.8%', '39.9%', '39.95%', '40%']
   );
   
   const dashWidth = useTransform(smoothProgress, 
     [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1], 
-    ['15rem', '16.5rem', '18rem', '19.5rem', '21rem', '22.5rem', '24rem', '25.5rem', '27rem', '28.5rem', '30rem', '31.5rem', '33rem', '34.5rem', '36rem', '37.5rem', '39rem', '40.5rem', '42rem', '43.5rem', '45rem']
+    ['15rem', '20rem', '24rem', '27rem', '30rem', '32.5rem', '34.5rem', '36rem', '37.5rem', '38.7rem', '39.8rem', '40.8rem', '41.7rem', '42.5rem', '43.2rem', '43.8rem', '44.2rem', '44.5rem', '44.7rem', '44.9rem', '45rem']
   );
 
   return (
@@ -78,10 +78,10 @@ export default function Hero() {
 
           {/* Scrolling Text Section */}
           <div className="mt-0 relative w-screen -ml-[2rem] overflow-visible pointer-events-none">
-            <div className="flex items-center justify-center gap-4 text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
+            <div className="flex items-start lg:items-center justify-center gap-4 text-[200px] flex-col lg:flex-row xl:text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
               <motion.span 
                 initial={{ x: "0%" }}
-                className="xl:-ml-0 relative pointer-events-none" 
+                className="ml-5 xl:-ml-0 relative pointer-events-none tracking-[-1.3rem] lg:tracking-normal" 
                 style={{ x: frontX }}
               >
                 <span className="hover-highlight">F</span>
@@ -91,7 +91,7 @@ export default function Hero() {
               </motion.span>
               <motion.div 
                 initial={{ width: "15rem" }}
-                className="h-[30px] bg-[#6B6B6B] overflow-visible absolute xl:-ml-20 pointer-events-none"
+                className="h-[20px] lg:h-[30px] bg-[#6B6B6B] overflow-visible lg:absolute xl:-ml-20 pointer-events-none ml-115 -mt-50 xl:mt-0"
                 style={{ 
                   width: dashWidth,
                   left: '50%',
@@ -100,7 +100,7 @@ export default function Hero() {
               />
               <motion.span 
                 initial={{ x: "0%" }}
-                className="xl:ml-70 relative pointer-events-none" 
+                className="mt-5 ml-5 xl:ml-70 relative pointer-events-none tracking-[-1.5rem] lg:tracking-normal" 
                 style={{ x: endX }}
               >
                 <span className="hover-highlight">S</span>
@@ -110,8 +110,8 @@ export default function Hero() {
                 <span className="hover-highlight">K</span>
               </motion.span>
             </div>
-            <div className="flex xl:flex-row align-text-top items-start pointer-events-auto w-full">
-              <h2 className="text-[320px] font-bold text-[#6B6B6B] font-bebas-neue mt-4 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
+            <div className="flex flex-col xl:flex-row align-text-top items-start pointer-events-auto w-full">
+              <h2 className="text-[95px] xl:text-[320px] font-bold text-[#6B6B6B] font-bebas-neue -mt-25 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
                 <span className="hover-highlight">D</span>
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">V</span>
@@ -122,7 +122,7 @@ export default function Hero() {
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">R</span>
               </h2>
-              <p className="text-gray-400 font-open-sauce text-[18px] max-w-xl -mt-27 ml-[2rem] pointer-events-auto">
+              <p className="text-gray-400 font-open-sauce text-[18px] max-w-xl mt-5 xl:-mt-27 ml-[2rem] pointer-events-auto">
                 <span className="font-regular font-bebas-neue text-[20px] text-[#6B6B6B]">ABOUT</span> I&apos;m a developer based in Mandaluyong City, Philippines, specializing in building interactive digital experiences on the web and with AI, collaborating with brands and industry leaders.
               </p>
               <div className="ml-[2rem] mt-8">
