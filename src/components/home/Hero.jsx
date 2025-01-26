@@ -81,7 +81,7 @@ export default function Hero() {
             <div className="flex items-start lg:items-center justify-center gap-4 text-[200px] flex-col lg:flex-row xl:text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
               <motion.span 
                 initial={{ x: "0%" }}
-                className="ml-5 xl:-ml-0 relative pointer-events-none tracking-[-1.3rem] lg:tracking-normal" 
+                className="ml-8 xl:-ml-0 relative pointer-events-none tracking-[-0.3rem] lg:tracking-normal" 
                 style={{ x: frontX }}
               >
                 <span className="hover-highlight">F</span>
@@ -100,7 +100,7 @@ export default function Hero() {
               />
               <motion.span 
                 initial={{ x: "0%" }}
-                className="mt-5 ml-5 xl:ml-70 relative pointer-events-none tracking-[-1.5rem] lg:tracking-normal" 
+                className="mt-5 ml-8 xl:ml-70 relative pointer-events-none tracking-[-0.7rem] lg:tracking-normal" 
                 style={{ x: endX }}
               >
                 <span className="hover-highlight">S</span>
@@ -111,7 +111,7 @@ export default function Hero() {
               </motion.span>
             </div>
             <div className="flex flex-col xl:flex-row align-text-top items-start pointer-events-auto w-full">
-              <h2 className="text-[95px] xl:text-[320px] font-bold text-[#6B6B6B] font-bebas-neue -mt-25 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
+              <h2 className="text-[100px] xl:text-[320px] font-bold text-[#6B6B6B] font-bebas-neue -mt-25 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
                 <span className="hover-highlight">D</span>
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">V</span>
@@ -122,7 +122,7 @@ export default function Hero() {
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">R</span>
               </h2>
-              <p className="text-gray-400 font-open-sauce text-[18px] max-w-xl mt-5 xl:-mt-27 ml-[2rem] pointer-events-auto">
+              <p className="text-gray-400 font-open-sauce text-[18px] max-w-xl mt-3 xl:-mt-27 ml-[2rem] pointer-events-auto">
                 <span className="font-regular font-bebas-neue text-[20px] text-[#6B6B6B]">ABOUT</span> I&apos;m a developer based in Mandaluyong City, Philippines, specializing in building interactive digital experiences on the web and with AI, collaborating with brands and industry leaders.
               </p>
               <div className="ml-[2rem] mt-8">
