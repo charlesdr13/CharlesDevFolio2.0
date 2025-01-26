@@ -78,7 +78,7 @@ export default function Hero() {
 
           {/* Scrolling Text Section */}
           <div className="mt-0 relative w-screen -ml-[2rem] overflow-visible pointer-events-none">
-            <div className="flex items-start lg:items-center justify-center gap-4 text-[200px] flex-col lg:flex-row xl:text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
+            <div className="flex items-start lg:items-center justify-center gap-4 text-[180px] flex-col lg:flex-row xl:text-[350px] font-bebas-neue font-bold text-[#6B6B6B] overflow-visible xl:-mt-20">
               <motion.span 
                 initial={{ x: "0%" }}
                 className="ml-8 xl:-ml-0 relative pointer-events-none tracking-[-0.3rem] lg:tracking-normal" 
@@ -91,7 +91,7 @@ export default function Hero() {
               </motion.span>
               <motion.div 
                 initial={{ width: "15rem" }}
-                className="h-[20px] lg:h-[30px] bg-[#6B6B6B] overflow-visible lg:absolute xl:-ml-20 pointer-events-none ml-115 -mt-50 xl:mt-0"
+                className="h-[20px] lg:h-[30px] bg-[#6B6B6B] overflow-visible lg:absolute xl:-ml-20 pointer-events-none ml-100 -mt-45 xl:mt-0"
                 style={{ 
                   width: dashWidth,
                   left: '50%',
@@ -111,7 +111,7 @@ export default function Hero() {
               </motion.span>
             </div>
             <div className="flex flex-col xl:flex-row align-text-top items-start pointer-events-auto w-full">
-              <h2 className="text-[100px] xl:text-[320px] font-bold text-[#6B6B6B] font-bebas-neue -mt-25 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
+              <h2 className="text-[90px] xl:text-[320px] font-bold text-[#6B6B6B] font-bebas-neue -mt-25 ml-[2rem] xl:-mt-55 pointer-events-none whitespace-nowrap overflow-visible">
                 <span className="hover-highlight">D</span>
                 <span className="hover-highlight">E</span>
                 <span className="hover-highlight">V</span>
